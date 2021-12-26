@@ -1,0 +1,24 @@
+{
+  "name": "checkpackageversion",
+  "version": "1.0.0",
+  "description": "📦GitHubPackagesで公開されたPackageの最新バージョンをチェックします。",
+  "main": "index.ts",
+  "scripts": {
+    "test": "ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuuahp/CheckPackageVersion.git"
+  },
+  "author": "yuuaHP",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuuahp/CheckPackageVersion/issues"
+  },
+  "homepage": "https://github.com/yuuahp/CheckPackageVersion#readme",
+  "dependencies": {
+    "@octokit/core": "^3.5.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}
