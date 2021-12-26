@@ -9,7 +9,7 @@
 export default {
     token: "ここにアクセストークン",
     name: "パッケージのお名前",
-    type: "パッケージのおタイプ"
+    type: "パッケージのおタイプ(maven/npm/rubygems/docker/nuget/container)"
 }
 ```
 
