@@ -2,6 +2,8 @@
 
 📦GitHubPackagesで公開されたPackageの最新バージョンをチェックします。
 
+## 設定
+
 ```typescript
 //config.ts
 export default {
@@ -10,3 +12,7 @@ export default {
     type: "パッケージのおタイプ"
 }
 ```
+
+## 実行
+
+`npm test`
