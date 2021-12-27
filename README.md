@@ -1,11 +1,11 @@
 # CheckPackageVersion
 
-📦GitHubPackagesで公開されたPackageの最新バージョンをチェックします。
+📦GitHubPackagesで公開されたPackageの最新バージョンをチェックします。  
+(Gradle-KotlinDSLであれば自動で最新バージョンに更新することも出来ます)
 
-## 設定
+## 設定 (config.ts)
 
 ```typescript
-//config.ts
 export default {
     token: "ここにアクセストークン",
     groupId: "パッケージのGroupID",
@@ -13,6 +13,19 @@ export default {
     type: "パッケージのおタイプ(maven/npm/rubygems/docker/nuget/container)",
     replaceVersion: true, //指定したビルドファイルを最新バージョンに書き換えるか (KotlinDSLのみ対応)
     buildFilePath: "build.gradle.ktsへのパス"
+}
+```
+
+### 例
+
+```typescript
+export default {
+    token: "ghp_yourpersonaltoken",
+    groupId: "com.example",
+    name: "examplepackage",
+    type: "maven",
+    replaceVersion: true,
+    buildFilePath: "./build.gradle.kts"
 }
 ```
 
