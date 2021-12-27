@@ -12,7 +12,7 @@ export default {
     name: "パッケージのお名前",
     type: "パッケージのおタイプ(maven/npm/rubygems/docker/nuget/container)",
     replaceVersion: true, //指定したビルドファイルを最新バージョンに書き換えるか (KotlinDSLのみ対応)
-    buildFilePath: "build.gradle.ktsへのパス"
+    buildFilePath: "build.gradle.ktsへのパス" //同じくKotlinDSLのみ対応
 }
 ```
 
